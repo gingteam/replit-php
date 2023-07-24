@@ -1,0 +1,14 @@
+run = ["php", "main.php"]
+
+entrypoint = "main.php"
+
+[nix]
+channel = "unstable"
+
+[languages]
+
+[languages.php]
+pattern = "**/*.php"
+
+[languages.php.languageServer]
+start = "phpactor language-server"
